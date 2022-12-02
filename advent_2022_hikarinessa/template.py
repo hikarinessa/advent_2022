@@ -1,9 +1,9 @@
-# https://adventofcode.com/2021/day/5
+# https://adventofcode.com/2022/day/5
 # region ---- imports and inputs ----
 import os
 import sys
 
-with open(os.path.join(sys.path[0], "Inputs/advent_05_input.txt"), "r") as raw_input:
+with open(os.path.join(sys.path[0], "inputs/advent_05_input.txt"), "r") as raw_input:
     INPUT = raw_input.read().splitlines()
 
 TEST_INPUT = []

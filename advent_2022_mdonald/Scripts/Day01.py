@@ -38,7 +38,7 @@ def do_magic():
             elves.append(elf)
     
     elves.sort(key=lambda elf: elf.get_total_inventory())
-    first, second, third = [elf.get_total_inventory() for elf in elves[-3:]]
+    third, second, first = [elf.get_total_inventory() for elf in elves[-3:]]
     print("*"*96)
     print("* The top 3 elves are carrying:")
     print("* " + str(first))

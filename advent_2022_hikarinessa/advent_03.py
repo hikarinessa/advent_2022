@@ -1,4 +1,4 @@
-# https://adventofcode.com/2022/day/5
+# https://adventofcode.com/2022/day/3
 # region ---- imports and inputs ----
 import os
 import sys

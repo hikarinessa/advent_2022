@@ -44,21 +44,21 @@ def part1(my_input):
     return my_score
 
 
-win_dict = {'A': 8, 'B': 9, 'C': 7}
-lose_dict = {'A': 3, 'B': 1, 'C': 2}
-draw_dict = {'A': 4, 'B': 5, 'C': 6}
-
-
 def part2(my_input):
+    win_dict = {'A': 8, 'B': 9, 'C': 7}
+    lose_dict = {'A': 3, 'B': 1, 'C': 2}
+    draw_dict = {'A': 4, 'B': 5, 'C': 6}
     my_score = 0
+
     for i in my_input:
         if i[2] == 'X':
             my_score += lose_dict[i[0]]
-        if i[2] == 'Y':
+        elif i[2] == 'Y':
             my_score += draw_dict[i[0]]
-        if i[2] == 'Z':
+        elif i[2] == 'Z':
             my_score += win_dict[i[0]]
     return my_score
+
 
 if __name__ == "__main__":
     print('Part 1 =', part1(INPUT))  # 10994
